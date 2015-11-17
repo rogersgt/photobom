@@ -1,0 +1,141 @@
+@import "styles/variables.scss";
+@import "styles/buttons.scss";
+
+/////////////////////////////////////////////// General ////////////////////////////////////////////////////////
+body{
+  background-color: $lightGray;
+  padding: 0;
+  margin: 0;
+  font-family: "Arial";
+  width: 100%;
+}
+
+/////////////////////////////////////////////// Header ////////////////////////////////////////////////////////
+header {
+  background-color: $blueSky;
+  width: 100%;
+  h1 {
+    margin: 0;
+    font-size: 4em;
+    text-align: center;
+  }
+}
+.navbar {
+  width: 100%;
+  margin: 0;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  li {
+    display: inline-block;
+    margin-left: 3%;
+  }
+}
+/////////////////////////////////////////////// Body ////////////////////////////////////////////////////////
+.container {
+  width: 90%;
+  margin: 0 auto;
+  align-items: center;
+}
+.feed {
+  background-color: $lightYellow;
+  border-radius: .6em;
+  box-shadow: .2em .2em .4em black;
+  margin: 5%;
+  img {
+    width: 50em;
+    margin-left: 6em;
+    align-self: center;
+    border-radius: .4em;
+  }
+  li {
+    display: inline-block;
+    width: 100%;
+    overflow: scroll;
+    &:nth-child(2+3+4) {
+      height: 5em;
+    }
+    h3{
+      display: inline-block;
+      width: 2%;
+      margin: 0 1%;
+      float: right;
+    }
+    h4 {
+      font-size: 2em;
+      color: white;
+      text-shadow: 1px 1px 2px black;
+      margin: .5em 0 .5em 13em;
+    }
+    button {
+      display: inline-block;
+      float: right;
+      margin-left: 2%;
+    }
+    p {
+      background-color: $lightGray;
+      margin: 1%;
+      padding: 1%;
+      border-radius: .2em;
+
+    }
+  }
+}
+.poster {
+  font-size: 1.2em;
+  margin: 1% 0 1% 30%;
+  width: 40%;
+  background-color: $blueSky;
+  border-radius: .4em;
+  box-shadow: 2px 2px 4px black;
+  input {
+    width: 90%;
+    margin: 2% 0 0 6%;
+    border-radius: .2em;
+    border: none;
+    font-size: 1em;
+  }
+  button {
+    width: 60%;
+    margin: 2% 0 2% 20%;
+    background-color: $submitGreen;
+    color: white;
+    border: none;
+    font-size: 1em;
+    &:hover {
+      background-color: $lightGray;
+    }
+  }
+  h3 {
+    margin-left: 37%;
+    color: white;
+  }
+}
+.picInfo {
+  padding: 1%;
+  margin: 0;
+}
+span {
+  float: right;
+}
+.like {
+  border: none;
+  border-radius: .8em;
+  color: white;
+  background-color: $submitGreen;
+  &:hover {
+    background-color: $lightGray;
+    box-shadow: 2px 2px 4px black;
+  }
+}
+.dislike {
+  border: none;
+  border-radius: .8em;
+  color: white;
+  background-color: $stopLightRed;
+  &:hover {
+    background-color: $lightGray;
+    box-shadow: 2px 2px 4px black;
+  }
+}
+/////////////////////////////////////////////// Footer ////////////////////////////////////////////////////////
